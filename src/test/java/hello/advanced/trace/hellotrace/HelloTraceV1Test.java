@@ -11,6 +11,7 @@ class HelloTraceV1Test {
     TraceStatus status = trace.begin("hello");
     trace.end(status);
   }
+
   @Test
   void begin_exception() {
     HelloTraceV1 trace = new HelloTraceV1();
